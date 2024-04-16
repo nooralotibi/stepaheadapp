@@ -6,13 +6,56 @@
 //
 
 import SwiftUI
-
+import SwiftData
 struct ExtractedList: View {
+    @Environment(\.modelContext) private var context
+
+    let extract: [extractxt]
+    
+    private func deletextract(indexSet: IndexSet){
+        indexSet.forEach { index in
+            let extract = extract[index]
+            context.delete(extract)
+            do {
+                try context.save()
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Extracted Text")
+                .font(.title)
+                .foregroundColor(.blue)
+                .padding()
+                .padding(.trailing, 600)
+            
+            List {
+                ForEach(extract) { extract in
+                    NavigationLink(destination: extractetails(extract: extract)) {
+                        Text(extract.recognizedText)
+                            .font(.custom(extract.font, size: extract.size))
+                    }
+                }
+                .onDelete(perform: deletextract)
+            }
+        }
+
     }
 }
 
-#Preview {
-    ExtractedList()
+struct DetailsView: View {
+    let extract: extractxt
+    
+    var body: some View {
+        Text("Extracted text:")
+        Text(extract.recognizedText)
+            .font(.custom(extract.font, size: extract.size))
+    }
 }
+
+//#Preview {
+//    ExtractedList()
+//}

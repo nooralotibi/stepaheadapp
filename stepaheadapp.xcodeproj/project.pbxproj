@@ -14,6 +14,11 @@
 		799758C22B8C291700A7F8D7 /* stepaheadappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799758C12B8C291700A7F8D7 /* stepaheadappTests.swift */; };
 		799758CC2B8C291700A7F8D7 /* stepaheadappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799758CB2B8C291700A7F8D7 /* stepaheadappUITests.swift */; };
 		799758CE2B8C291700A7F8D7 /* stepaheadappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799758CD2B8C291700A7F8D7 /* stepaheadappUITestsLaunchTests.swift */; };
+		799758DB2B8C293E00A7F8D7 /* extractetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799758DA2B8C293E00A7F8D7 /* extractetails.swift */; };
+		799758DD2B8C295900A7F8D7 /* ExtractedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799758DC2B8C295900A7F8D7 /* ExtractedList.swift */; };
+		799758DF2B8C297700A7F8D7 /* extractxt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799758DE2B8C297700A7F8D7 /* extractxt.swift */; };
+		799758E12B8C299000A7F8D7 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799758E02B8C299000A7F8D7 /* Onboarding.swift */; };
+		799758E32B8C29B100A7F8D7 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799758E22B8C29B100A7F8D7 /* Splash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		799758C72B8C291700A7F8D7 /* stepaheadappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stepaheadappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		799758CB2B8C291700A7F8D7 /* stepaheadappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stepaheadappUITests.swift; sourceTree = "<group>"; };
 		799758CD2B8C291700A7F8D7 /* stepaheadappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stepaheadappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		799758DA2B8C293E00A7F8D7 /* extractetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extractetails.swift; sourceTree = "<group>"; };
+		799758DC2B8C295900A7F8D7 /* ExtractedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractedList.swift; sourceTree = "<group>"; };
+		799758DE2B8C297700A7F8D7 /* extractxt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extractxt.swift; sourceTree = "<group>"; };
+		799758E02B8C299000A7F8D7 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		799758E22B8C29B100A7F8D7 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,11 @@
 			children = (
 				799758B02B8C291600A7F8D7 /* stepaheadappApp.swift */,
 				799758B22B8C291600A7F8D7 /* ContentView.swift */,
+				799758DA2B8C293E00A7F8D7 /* extractetails.swift */,
+				799758DC2B8C295900A7F8D7 /* ExtractedList.swift */,
+				799758DE2B8C297700A7F8D7 /* extractxt.swift */,
+				799758E02B8C299000A7F8D7 /* Onboarding.swift */,
+				799758E22B8C29B100A7F8D7 /* Splash.swift */,
 				799758B42B8C291700A7F8D7 /* Assets.xcassets */,
 				799758B62B8C291700A7F8D7 /* Preview Content */,
 			);
@@ -257,8 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799758E32B8C29B100A7F8D7 /* Splash.swift in Sources */,
+				799758E12B8C299000A7F8D7 /* Onboarding.swift in Sources */,
 				799758B32B8C291600A7F8D7 /* ContentView.swift in Sources */,
 				799758B12B8C291600A7F8D7 /* stepaheadappApp.swift in Sources */,
+				799758DD2B8C295900A7F8D7 /* ExtractedList.swift in Sources */,
+				799758DF2B8C297700A7F8D7 /* extractxt.swift in Sources */,
+				799758DB2B8C293E00A7F8D7 /* extractetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

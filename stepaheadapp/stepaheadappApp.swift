@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
-
+import SwiftData
 @main
 struct stepaheadappApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for: [extractxt.self])
         }
     }
 }
